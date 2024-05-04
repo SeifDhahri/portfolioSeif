@@ -1,0 +1,56 @@
+.portfolio-wrapper {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.image-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-image-box {
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 125px;
+}
+
+.overflow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-image-box:hover .overflow {
+    opacity: 1;
+}
+
+.portfolio-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+    opacity: 1;
+}
